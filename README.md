@@ -1,9 +1,202 @@
-# Research Ops Portfolio
-Static portfolio website for Mubeen Farooq / Research Ops.
+[gemini-code-1788428204549.html](https://github.com/user-attachments/files/31784333/gemini-code-1788428204549.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubeen Farooq - Research Ops & Lead Generation Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
-## Publish with GitHub Pages
-Upload all files in this folder to your GitHub repository, keeping `index.html` in the repository root.
-Then enable Settings → Pages → Deploy from branch → `main` → `/ (root)`.
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">Mubeen<span>Farooq</span></div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact" class="nav-cta">Contact Us</a>
+        </nav>
+    </header>
 
-## Custom domain
-After Pages is working, add `mubeenfarooq.online` under Settings → Pages → Custom domain, then configure the Namecheap DNS records for GitHub Pages.
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Scale Your Business With Expert <span class="highlight">Lead Generation</span> & Data Intelligence</h1>
+            <p>We deliver elite B2B data entry, targeted lead generation, and comprehensive CRM management services to supercharge your sales pipeline.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary">Explore Services</a>
+                <a href="https://www.upwork.com/freelancers/~01bc54a7d45517aaac?mp_source=share" target="_blank" class="btn-secondary"><i class="fa-brands fa-upwork"></i> Hire on Upwork</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Our Core <span class="highlight">Services</span></h2>
+            <p>End-to-end operational solutions engineered for maximum growth and accuracy.</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <i class="fa-solid fa-bullseye service-icon"></i>
+                <h3>B2B Lead Generation & Prospecting</h3>
+                <p>
+                    Unlock predictable revenue streams with our hyper-targeted B2B lead generation solutions. In today’s competitive marketplace, finding the right decision-maker is half the battle. Our team utilizes advanced web research, state-of-the-art data scrapers, and manual verification protocols to build pristine prospect lists tailored precisely to your Ideal Customer Profile (ICP). We dive deep into industrial registries, business directories, and professional networks to extract verified corporate emails, direct phone numbers, and verified LinkedIn profiles. Every single lead undergoes rigorous quality filtering to ensure maximum deliverability and conversion rates for your outbound sales campaigns. Whether you are running cold email sequences or multi-channel outreach, our data provides the fuel your sales team needs to close more deals faster.
+                </p>
+                <div class="tools-used">
+                    <span>Tools & CRMs:</span> LinkedIn Sales Navigator, Apollo.io, Hunter.io, ZoomInfo, NeverBounce, Google Sheets
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <i class="fa-solid fa-database service-icon"></i>
+                <h3>Advanced Data Entry & Web Research</h3>
+                <p>
+                    Data is the backbone of modern business strategy, but messy or unorganized records can stall operations. Our comprehensive data entry and web research services ensure your databases remain immaculate, structured, and actionable. We handle high-volume data collection, PDF-to-spreadsheet extraction, financial record parsing, catalog management, and data cleansing with strict quality control. Our researchers are adept at scouring complex digital sources, public records, and academic or municipal directories to unearth hard-to-find information. We organize everything seamlessly into clean, customized databases, eliminating redundancy and saving your internal teams hundreds of hours of manual labor so you can focus entirely on high-value core business tasks.
+                </p>
+                <div class="tools-used">
+                    <span>Tools & CRMs:</span> Microsoft Excel, Google Workspace, Airtable, Notion, Python Scraping Scripts, PDF Parsers
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <i class="fa-solid fa-network-wired service-icon"></i>
+                <h3>CRM Data Management & Pipeline Optimization</h3>
+                <p>
+                    A powerful CRM is only as good as the data fed into it. We specialize in comprehensive CRM setup, data migration, contact enrichment, and regular pipeline hygiene to keep your sales workflow frictionless. Our experts organize inbound and outbound leads, categorize client interaction histories, track deal stages, and eliminate duplicate entries. By keeping your CRM systems impeccably updated, we empower your sales representatives to track interactions accurately, personalize communication at scale, and forecast revenue with high precision. We integrate seamlessly with major CRM ecosystems to ensure your operational infrastructure scales smoothly alongside your growing enterprise.
+                </p>
+                <div class="tools-used">
+                    <span>Tools & CRMs:</span> HubSpot, Salesforce, Pipedrive, Zoho CRM, Monday.com, ActiveCampaign
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>Meet Our <span class="highlight">Leadership Team</span></h2>
+            <p>Industry veterans managing your operations from A to Z with absolute precision.</p>
+        </div>
+
+        <div class="team-grid">
+            <!-- Mubeen Farooq -->
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <!-- Note: Save your photo as profile-1.png in the root directory -->
+                    <img src="profile-1.png" alt="Mubeen Farooq">
+                </div>
+                <h3>Mubeen Farooq</h3>
+                <span class="team-role">Research Ops & CEO Founder</span>
+                <p>Driving the vision and operational execution of high-performance research pipelines, client acquisition frameworks, and end-to-end data processing strategies.</p>
+            </div>
+
+            <!-- Nadir Ghafoor -->
+            <div class="team-card">
+                <div class="team-img-wrapper white-bg">
+                    <!-- Note: Save Nadir's photo as nadir.png in the root directory -->
+                    <img src="nadir.png" alt="Nadir Ghafoor">
+                </div>
+                <h3>Nadir Ghafoor</h3>
+                <span class="team-role">CEO Manager</span>
+                <p>Overseeing daily project workflows, team coordination, and client success delivery to ensure every campaign meets the highest standard of execution.</p>
+            </div>
+        </div>
+
+        <div class="about-description">
+            <p>We are a dedicated team that manages A to Z work for global clients. From raw data research to full-scale lead generation pipelines, our structured approach guarantees elite results and professional execution every step of the way.</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="section-title">
+            <h2>Client <span class="highlight">Reviews</span></h2>
+            <p>See what our global partners have to say about working with our team.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Mubeen and his team delivered exceptional lead generation lists for our B2B sales campaign. The data accuracy was close to 98%, and their communication was top-notch. Will definitely hire again!"</p>
+                <span class="client-name">— VP of Sales, SaaS Enterprise (USA)</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Nadir and Mubeen managed our massive CRM data migration and cleaning project seamlessly. Absolute professionals who handle A to Z operations with stunning efficiency."</p>
+                <span class="client-name">— Managing Director, Consulting Firm (UK)</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Top-tier data entry and web research provider on Upwork. They completed our complex directory scraping ahead of schedule. Outstanding service!"</p>
+                <span class="client-name">— Operations Lead, Marketing Agency (Australia)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <p>Ready to scale your business? Let's discuss your project today.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Phone / WhatsApp</h4>
+                        <p><a href="tel:03299844137">03299844137</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p><a href="mailto:MubeenFarooq728@gmail.com">MubeenFarooq728@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-upwork"></i>
+                    <div>
+                        <h4>Upwork Profile</h4>
+                        <p><a href="https://www.upwork.com/freelancers/~01bc54a7d45517aaac?mp_source=share" target="_blank">View Upwork Profile & Hire Us</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="https://formsubmit.co/MubeenFarooq728@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <textarea name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mubeen Farooq & Team. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
