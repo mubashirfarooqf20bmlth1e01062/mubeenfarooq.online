@@ -90,7 +90,7 @@
         <div class="team-grid">
             <!-- Mubeen Farooq -->
             <div class="team-card">
-                <div class="team-img-wrapper">
+                <div class="team-img-wrapper">https://github.com/mubashirfarooqf20bmlth1e01062/mubeenfarooq.online/blob/5f1fd73ee13dca23e0f4a28f475b7649f03aba13/mubeen.png
                     <!-- Note: Save your photo as profile-1.png in the root directory -->
                     <img src="profile-1.png" alt="Mubeen Farooq">
                 </div>
