@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mubeenfarooq.online/</loc></url>
-  <url><loc>https://mubeenfarooq.online/services.html</loc></url>
-  <url><loc>https://mubeenfarooq.online/about.html</loc></url>
-  <url><loc>https://mubeenfarooq.online/coverage.html</loc></url>
-
-
-  <url><loc>https://mubeenfarooq.online/process.html</loc></url>
-  <url><loc>https://mubeenfarooq.online/contact.html</loc></url>
-
+<url><loc>https://mubeenfarooq.online/</loc><changefreq>quarterly</changefreq><priority>1.0</priority></url>
+<url><loc>https://mubeenfarooq.online/school-district-research.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/decision-maker-research.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/procurement-rfp-research.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/strategic-outreach.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/partnership-development.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/crm-pipeline-management.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/speech-language-pathology.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/occupational-therapy.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/physical-therapy.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/special-education.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/aba-behavioral-health.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/school-psychology.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/school-counseling-mental-health.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/audiology-hearing-services.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/school-nursing-student-health.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/assistive-technology-aac.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/teletherapy-virtual-school-services.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/education-staffing.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/edtech-education-software.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/curriculum-instructional-resources.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/education-consulting-professional-development.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/interpreting-translation-accessibility.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/services.html</loc><changefreq>quarterly</changefreq><priority>0.9</priority></url>
+<url><loc>https://mubeenfarooq.online/industries.html</loc><changefreq>quarterly</changefreq><priority>0.9</priority></url>
+<url><loc>https://mubeenfarooq.online/who-we-help.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/about.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/process.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/coverage.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/faq.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/insights.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://mubeenfarooq.online/contact.html</loc><changefreq>quarterly</changefreq><priority>0.7</priority></url>
 </urlset>
