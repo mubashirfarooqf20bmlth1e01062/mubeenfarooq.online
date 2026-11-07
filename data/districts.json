@@ -1,0 +1,60 @@
+[
+  {
+    "id": "adelanto-elementary-ca",
+    "name": "Adelanto Elementary School District",
+    "county": "San Bernardino",
+    "state": "CA",
+    "districtType": "Elementary School District",
+    "status": "Active",
+    "website": "https://www.aesd.net/",
+    "mainPhone": "(760) 246-8691",
+    "cdsCode": "36-67587-0000000",
+    "lastVerified": "2026-11-07",
+    "districtSource": "https://sd.cde.ca.gov/schooldirectory/details?cdscode=36675870000000",
+    "contacts": [
+      {
+        "name": "Dr. Amber Best",
+        "title": "Director of Special Education",
+        "email": "amber_best@aesd.net",
+        "phone": "(760) 530-7650 ext. 23418",
+        "source": "https://www.aesd.net/divisions/educational-services"
+      },
+      {
+        "name": "Annie Perez",
+        "title": "Coordinator of Special Education",
+        "email": "annie_perez@aesd.net",
+        "phone": "(760) 246-8691 ext. 10658",
+        "source": "https://www.aesd.net/divisions/educational-services"
+      }
+    ]
+  },
+  {
+    "id": "alvord-unified-ca",
+    "name": "Alvord Unified School District",
+    "county": "Riverside",
+    "state": "CA",
+    "districtType": "Unified School District",
+    "status": "Active",
+    "website": "https://www.alvordschools.org/",
+    "mainPhone": "(951) 509-5000",
+    "cdsCode": "33-66977-0000000",
+    "lastVerified": "2026-11-07",
+    "districtSource": "https://www.cde.ca.gov/SchoolDirectory/details?cdscode=33669770000000",
+    "contacts": [
+      {
+        "name": "Michelle Sebastian, Ed.D.",
+        "title": "Director III, Special Education",
+        "email": "michelle.sebastian@alvordschools.org",
+        "phone": "(951) 509-5159",
+        "source": "https://www.alvordschools.org/231899_3"
+      },
+      {
+        "name": "Ian Fish",
+        "title": "Assistant Director, Student Services",
+        "email": "ian.fish@alvordschools.org",
+        "phone": "(951) 509-5139",
+        "source": "https://www.alvordschools.org/231899_3"
+      }
+    ]
+  }
+]
