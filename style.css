@@ -84,3 +84,18 @@
 
 /* Nationwide 50-state coverage presentation */
 .coverage-count{display:flex;align-items:center;gap:16px;padding:18px 22px;margin:24px 0;background:var(--navy);color:#fff;border-radius:15px}.coverage-count strong{font-size:38px;color:#b7e36a;line-height:1}.coverage-count span{font-size:14px;font-weight:700}.coverage-region{margin:24px 0}.coverage-region h3{margin:0 0 12px;font-size:17px}.states{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.state{display:flex;align-items:center;gap:10px;min-height:42px;background:#fff;border:1px solid var(--line);padding:10px 12px;border-radius:9px;font-size:12px}.state b{display:inline-grid;place-items:center;min-width:29px;height:25px;border-radius:6px;background:#edf5e6;color:#31532f;font-size:10px}.coverage-source{font-size:12px;margin-top:18px}.coverage-source a{font-weight:700}@media(max-width:700px){.states{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Tools and platforms logo section */
+.platforms-section{padding-top:76px;padding-bottom:82px;background:#f0f4ec;max-width:none;padding-left:max(6vw,calc((100vw - 1280px)/2));padding-right:max(6vw,calc((100vw - 1280px)/2))}
+.platforms-heading{max-width:760px;margin:0 auto 32px;text-align:center}
+.platforms-heading .eyebrow{justify-content:center}
+.platforms-heading h2{font-size:clamp(32px,4vw,46px);line-height:1.14;margin:0 0 14px}
+.platforms-heading h2 em{font-style:normal;color:#648b43}
+.platforms-heading>p:last-child{font-size:13px;line-height:1.8;color:var(--muted);max-width:620px;margin:0 auto}
+.platform-logo-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.platform-logo{min-height:94px;background:#fff;border:1px solid #e2e9dd;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:12px;padding:18px 14px;box-shadow:0 7px 22px #203c2808}
+.platform-logo img{width:30px;height:30px;object-fit:contain}
+.platform-logo span{font:700 13px Manrope,sans-serif;color:#34463a}
+.platform-disclaimer{max-width:900px;margin:22px auto 0;text-align:center;font-size:10px;line-height:1.7;color:#7b887e}
+@media(max-width:760px){.platforms-section{padding:60px 5vw}.platform-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.platform-logo{min-height:78px;gap:9px;padding:12px 8px}.platform-logo img{width:25px;height:25px}.platform-logo span{font-size:11px}}
