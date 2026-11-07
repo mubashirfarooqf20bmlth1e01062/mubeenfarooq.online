@@ -1,6 +1,6 @@
 {
   "lastReviewed": "2026-11-07",
-  "source": "EDJOIN",
+  "source": "EDJOIN, official school district career pages, SchoolSpring and Indeed discovery",
   "jobs": [
     {
       "id": "hem-et-2291985",
@@ -141,6 +141,81 @@
       "summary": "District-wide Speech Therapist hiring pool. Posting requests a Clinical Rehabilitation–Language Speech Hearing credential and supporting application documents.",
       "url": "https://www.edjoin.org/Home/JobPosting/2184548",
       "year": "2026–27"
+    },
+    {
+      "id": "springs-2282862",
+      "title": "Speech Language Pathologist — Inland Empire & Itinerant",
+      "district": "Springs Charter Schools",
+      "location": "Temecula / Inland Empire, Riverside County, CA",
+      "posted": "2026-11-01",
+      "deadline": "November 15, 2026 · 11:55 PM Pacific",
+      "salary": "$95,530–$132,236 annually",
+      "openings": "2",
+      "type": "Full-time · 2026–27 · 200 days",
+      "summary": "Itinerant TK–12 school-based SLP role serving the Inland Empire. Posting lists health and wellness benefits, paid professional development and CalSTRS retirement.",
+      "url": "https://www.edjoin.org/Home/JobPosting/2282862",
+      "year": "2026–27",
+      "source": "EDJOIN"
+    },
+    {
+      "id": "mt-diablo-2133868",
+      "title": "Speech Language Pathologist — Districtwide 2026–27",
+      "district": "Mt. Diablo Unified School District",
+      "location": "Concord, Contra Costa County, CA",
+      "posted": "2026-11-05",
+      "deadline": "November 13, 2026 · 4:30 PM Pacific",
+      "salary": "$69,363.90–$127,894.20 annually",
+      "openings": "5",
+      "type": "Full-time · 185 days + orientation",
+      "summary": "Districtwide SLP opening for the 2026–27 school year. Posting accepts qualifying California credentials, SLP licenses, out-of-state license holders and CFY-eligible applicants; medical, dental and vision benefits listed.",
+      "url": "https://www.edjoin.org/Home/JobPosting/2133868",
+      "year": "2026–27",
+      "source": "EDJOIN"
+    },
+    {
+      "id": "education-change-2169576",
+      "title": "Speech and Language Pathologist Pool — 2026–27",
+      "district": "Education for Change Public Schools",
+      "location": "Oakland, Alameda County, CA",
+      "posted": "2026-10-16",
+      "deadline": "Until filled",
+      "salary": "$101,216–$157,412 annually",
+      "openings": "1",
+      "type": "Full-time or part-time · 191 days",
+      "summary": "School-based SLP pool supporting student communication and learning. Posting lists California SLP credential/license requirements and medical, dental and vision contributions.",
+      "url": "https://www.edjoin.org/Home/JobPosting/2169576",
+      "year": "2026–27",
+      "source": "EDJOIN"
+    },
+    {
+      "id": "poway-2265765",
+      "title": "Speech Language Pathologist Eligibility Pool — 2026–27",
+      "district": "Poway Unified School District",
+      "location": "Poway, San Diego County, CA",
+      "posted": "2026-08-18",
+      "deadline": "Until filled",
+      "salary": "$77,812–$135,415 annually; $1,000 stipend and $500 annual license-fee reimbursement",
+      "openings": "1",
+      "type": "Full-time · 186 days",
+      "summary": "District eligibility pool for 2026–27 SLP vacancies. Clinical Fellows are encouraged; posting lists credential, transcripts, resume, recommendations and letter of intent requirements.",
+      "url": "https://www.edjoin.org/Home/JobPosting/2265765",
+      "year": "2026–27",
+      "source": "EDJOIN"
+    },
+    {
+      "id": "evergreen-5633759",
+      "title": "School Speech Language Pathologist — 2026–27",
+      "district": "Evergreen Public Schools",
+      "location": "Vancouver, Clark County, WA",
+      "posted": "2026-04-18",
+      "deadline": "Until a qualified applicant is selected",
+      "salary": "$64,511–$118,655 per negotiated agreement",
+      "openings": "Not specified",
+      "type": "Full-time · 1.0 FTE · continuing position",
+      "summary": "Continuing school-based SLP position for the 2026–27 school year. Requires a master’s degree in speech pathology, Washington ESA SLP certification and eligibility for state licensure.",
+      "url": "https://www.schoolspring.com/jobdetail?jobId=5633759",
+      "year": "2026–27",
+      "source": "SchoolSpring"
     }
   ]
 }
