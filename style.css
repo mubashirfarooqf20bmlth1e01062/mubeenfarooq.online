@@ -5,3 +5,44 @@
 @media(max-width:1050px){.nav{padding:0 4vw}.nav nav{gap:11px;font-size:11px}.nav-cta{padding:11px 14px}.hero-inner{gap:3%}.hero-visual{min-height:440px}.floating-note{right:-5px}.audience-card{min-height:320px}.section{padding-left:5vw;padding-right:5vw}}
 @media(max-width:820px){.nav{min-height:72px;flex-wrap:wrap;padding:12px 5vw;gap:10px}.nav nav{order:3;width:100%;overflow-x:auto;display:flex;padding:4px 0 7px;gap:22px}.nav nav a{font-size:11px}.hero-inner,.intro-content,.section-head,.coverage-section,.statement-band,.two,.contact-layout{grid-template-columns:1fr}.hero-inner{padding-top:20px}.hero-copy{max-width:720px}.hero-visual{min-height:500px;max-width:600px;width:100%;margin:0 auto}.hero-bottom{justify-content:center}.section-head{gap:15px}.audience-grid{grid-template-columns:1fr 1fr}.audience-feature{grid-row:span 2}.statement-image{min-height:300px}.coverage-visual{max-width:460px;width:100%;margin:auto}.grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.quote-grid{grid-template-columns:1fr 1fr}.states{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:560px){.nav{padding:10px 4vw}.brand-mark{width:38px;height:38px}.brand-name{font-size:12px}.nav-cta{font-size:10px;padding:10px 13px}.hero-home{padding:45px 5vw 0}.hero h1{font-size:43px}.lead{font-size:14px}.hero-actions{gap:16px}.hero-visual{min-height:390px}.hero-main-image{inset:8px 12px 25px 28px;border-radius:140px 140px 18px 18px}.founder-card{bottom:15px;min-width:195px}.founder-card img{width:40px;height:40px}.floating-note{bottom:90px;right:-3px;padding:9px 11px}.floating-note strong{font-size:9px}.floating-note small{font-size:8px}.image-stamp{top:25px;padding:11px 13px}.image-stamp b{font-size:11px}.hero-bottom{font-size:8px;gap:9px}.section{padding:65px 5vw}.intro-content{gap:22px}.intro-content h2,.section-head h2,.coverage-copy h2{font-size:36px}.audience-grid{grid-template-columns:1fr}.audience-card{min-height:300px}.audience-feature{grid-row:auto}.service-row{grid-template-columns:30px 1fr 22px;gap:10px;padding:19px 3px}.service-title{font-size:14px}.service-desc{display:none}.service-arrow{grid-column:3;grid-row:1}.statement-copy{padding:48px 7vw}.statement-copy h2{font-size:35px}.coverage-visual{height:300px}.coverage-orbit{width:220px;height:220px}.orbit-two{width:280px;height:280px}.coverage-center{width:130px;height:130px}.coverage-center span{font-size:53px}.tag-one{top:23px}.tag-two{right:-2px}.tag-three{bottom:28px}.tag-four{bottom:40px;left:0}.closing-cta{padding:58px 6vw}.cta-mark{width:85px;height:85px;font-size:29px}.cta-mark span{font-size:16px}.footer-top{grid-template-columns:1fr;gap:20px}.footer-contact{justify-items:start}.footer-bottom{display:grid}.page-hero{padding:58px 5vw;min-height:280px}.page-hero h1{font-size:39px}.content{padding:58px 5vw}.grid,.checklist,.form-grid,.quote-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr}.states{grid-template-columns:repeat(2,1fr)}.form-card{padding:21px}.contact-info{padding:25px}}
+
+/* Verified school district directory */
+.directory-hero{background:linear-gradient(90deg,#10251ff2,#10251f9c),url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1800&q=85') center/cover}
+.directory-content{padding-top:65px}
+.directory-intro{max-width:800px;margin:0 auto 38px;text-align:center}
+.directory-intro h2{margin:0 0 14px}
+.directory-intro h2 em{font-style:normal;color:#648b43}
+.directory-intro p:not(.eyebrow){margin-left:auto;margin-right:auto}
+.directory-toolbar{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px;margin-bottom:22px}
+.directory-search-label{font-size:11px;font-weight:800;display:block;margin-bottom:9px}
+.directory-controls{display:grid;grid-template-columns:1fr 220px;gap:12px}
+.directory-controls input,.directory-controls select{width:100%;padding:14px;border:1px solid #d5ded5;border-radius:10px;background:#fbfcfa;font:13px "DM Sans",sans-serif;color:var(--ink)}
+.directory-results{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:14px;font-size:11px;color:var(--muted)}
+.directory-results strong{color:#557b36}
+.district-list{display:grid;gap:18px}
+.district-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 8px 24px #233a2606}
+.district-card-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
+.verified-label{display:inline-block;color:#4f7937;background:#edf5e6;border-radius:99px;padding:5px 10px;font-size:9px;font-weight:800;letter-spacing:.08em}
+.district-card h2{font-size:24px;margin:11px 0 3px}
+.district-location{font-size:12px;color:var(--muted);margin:0}
+.district-website{font-size:11px;font-weight:800;color:#557b36;white-space:nowrap}
+.district-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:17px 0;margin:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.district-facts span{font-size:12px;color:var(--muted)}
+.district-facts b{display:block;color:var(--ink);font-size:10px;margin-bottom:3px}
+.district-card h3{font-size:15px;margin:0 0 12px}
+.contact-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.directory-contact{border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:10px}
+.directory-contact>div:first-child{display:grid}
+.directory-contact strong{font-size:13px}
+.directory-contact span{font-size:11px;color:var(--muted)}
+.contact-details{display:grid;gap:4px}
+.contact-details a{font-size:11px;color:#557b36;overflow-wrap:anywhere}
+.contact-details span{font-size:11px;color:var(--ink)}
+.contact-details .source-link{font-size:10px;font-weight:700;margin-top:4px}
+.district-foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:14px;margin-top:18px;font-size:10px;color:var(--muted)}
+.district-foot a{color:#557b36;font-weight:700}
+.directory-note,.directory-empty{background:#edf5e6;border:1px solid #d5e4ca;border-radius:14px;padding:20px;margin-top:22px;color:#536454;font-size:12px}
+.directory-note p{margin:6px 0 0;font-size:11px}
+.directory-empty{background:#fff;border-color:var(--line);color:var(--ink)}
+.directory-empty p{margin:5px 0 0;font-size:12px;color:var(--muted)}
+@media(max-width:650px){.directory-controls,.contact-list{grid-template-columns:1fr}.directory-card-head,.district-card-head{display:grid}.district-website{white-space:normal}.district-facts{grid-template-columns:1fr 1fr}.district-card{padding:18px}.district-card h2{font-size:20px}.directory-results{display:grid}}
