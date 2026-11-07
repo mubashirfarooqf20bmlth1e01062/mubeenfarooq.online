@@ -48,9 +48,9 @@
 @media(max-width:650px){.directory-controls,.contact-list{grid-template-columns:1fr}.directory-card-head,.district-card-head{display:grid}.district-website{white-space:normal}.district-facts{grid-template-columns:1fr 1fr}.district-card{padding:18px}.district-card h2{font-size:20px}.directory-results{display:grid}}
 
 /* Directory lead status and pagination */
-.pending-label{display:inline-block;color:#805b1b;background:#fff3d8;border-radius:99px;padding:5px 10px;font-size:9px;font-weight:800;letter-spacing:.08em}
+.pending-label{display:inline-block;color:#805b1b;background:#fff3d8;border-radius:99px;padding:5px 10px;font-size:9px;font-weight:800;letter-spacing:.08em}\n.active-label{display:inline-block;color:#28634c;background:#e8f5ee;border-radius:99px;padding:5px 10px;font-size:9px;font-weight:800;letter-spacing:.08em}
 .contact-pending{display:block;color:#805b1b;font-size:10px;margin-top:5px}
-.contact-verified{display:block;color:#4f7937;font-size:10px;margin-top:5px}
+.contact-verified{display:block;color:#4f7937;font-size:10px;margin-top:5px}\n.contact-active{display:block;color:#28634c;font-size:10px;margin-top:5px}
 .record-note{font-size:10px;color:#805b1b;background:#fff8e9;padding:9px 11px;border-radius:8px;margin:14px 0 0}
 .directory-pagination{display:flex;align-items:center;justify-content:center;gap:18px;padding:24px 0}
 .directory-pagination button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:10px 15px;font:700 11px "DM Sans";cursor:pointer;color:var(--ink)}
