@@ -1,60 +1,7 @@
-const list = document.getElementById("district-list");
-const search = document.getElementById("district-search");
-const stateFilter = document.getElementById("state-filter");
-const count = document.getElementById("district-count");
-const status = document.getElementById("directory-status");
-let districts = [];
-
-function escapeHTML(value = "") {
-  return String(value).replace(/[&<>"']/g, char => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-  })[char]);
-}
-
-function render() {
-  const term = search.value.trim().toLowerCase();
-  const state = stateFilter.value;
-  const filtered = districts.filter(d => {
-    const haystack = [d.name, d.county, d.state, d.districtType, ...(d.contacts || []).flatMap(c => [c.name, c.title])].join(" ").toLowerCase();
-    return (!term || haystack.includes(term)) && (!state || d.state === state);
-  });
-  count.textContent = filtered.length + (filtered.length === 1 ? " verified district" : " verified districts");
-  if (!filtered.length) {
-    list.innerHTML = '<div class="directory-empty"><strong>No matching verified districts.</strong><p>Try another district name or clear the filters.</p></div>';
-    return;
-  }
-  list.innerHTML = filtered.map(d => `
-    <article class="district-card">
-      <div class="district-card-head">
-        <div><span class="verified-label">✓ VERIFIED PUBLIC DISTRICT</span><h2>${escapeHTML(d.name)}</h2><p class="district-location">${escapeHTML(d.county)} County, ${escapeHTML(d.state)} · ${escapeHTML(d.districtType)}</p></div>
-        <a class="district-website" href="${escapeHTML(d.website)}" target="_blank" rel="noopener">Official website ↗</a>
-      </div>
-      <div class="district-facts"><span><b>Main office</b>${escapeHTML(d.mainPhone)}</span><span><b>District status</b>${escapeHTML(d.status)}</span><span><b>CA CDS code</b>${escapeHTML(d.cdsCode)}</span></div>
-      <h3>Verified public professional contacts</h3>
-      <div class="contact-list">
-        ${(d.contacts || []).map(c => `
-          <div class="directory-contact">
-            <div><strong>${escapeHTML(c.name)}</strong><span>${escapeHTML(c.title)}</span></div>
-            <div class="contact-details"><a href="mailto:${escapeHTML(c.email)}">${escapeHTML(c.email)}</a><span>${escapeHTML(c.phone)}</span><a class="source-link" href="${escapeHTML(c.source)}" target="_blank" rel="noopener">Official contact source ↗</a></div>
-          </div>`).join("")}
-      </div>
-      <div class="district-foot"><span>District verification: <a href="${escapeHTML(d.districtSource)}" target="_blank" rel="noopener">California Department of Education ↗</a></span><span>Checked: ${escapeHTML(d.lastVerified)}</span></div>
-    </article>`).join("");
-}
-
-async function loadDirectory() {
-  try {
-    const response = await fetch("data/districts.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("Directory data could not be loaded.");
-    districts = await response.json();
-    status.textContent = "Only records confirmed against official district and government sources are shown.";
-    render();
-  } catch (error) {
-    status.textContent = "The verified directory data could not be loaded. Please try again later.";
-    list.innerHTML = '<div class="directory-empty">Directory temporarily unavailable.</div>';
-  }
-}
-
-search.addEventListener("input", render);
-stateFilter.addEventListener("change", render);
-loadDirectory();
+const list=document.getElementById("district-list"),search=document.getElementById("district-search"),stateFilter=document.getElementById("state-filter"),count=document.getElementById("district-count"),status=document.getElementById("directory-status"),pager=document.getElementById("directory-pagination");let districts=[],page=1;const pageSize=25;
+function esc(v="#"){return String(v??"#").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function known(v){return v&&v!=="#";}
+function link(v,label){return known(v)?'<a href="'+esc(v)+'" target="_blank" rel="noopener">'+esc(label)+' ↗</a>':'#';}
+function render(){const term=search.value.trim().toLowerCase(),state=stateFilter.value;const filtered=districts.filter(d=>{const h=[d.name,d.county,d.state,d.districtType,...(d.contacts||[]).flatMap(c=>[c.name,c.title,c.email])].join(" ").toLowerCase();return(!term||h.includes(term))&&(!state||d.state===state);});const verified=filtered.filter(d=>d.verificationStatus.startsWith("Verified")).length;count.textContent=filtered.length+" district listings · "+verified+" verified · "+(filtered.length-verified)+" pending review";const pages=Math.max(1,Math.ceil(filtered.length/pageSize));page=Math.min(page,pages);const shown=filtered.slice((page-1)*pageSize,page*pageSize);if(!shown.length){list.innerHTML='<div class="directory-empty">No matching district records. Try another search.</div>';pager.innerHTML="";return;}list.innerHTML=shown.map(d=>{const ok=d.verificationStatus.startsWith("Verified");return '<article class="district-card"><div class="district-card-head"><div><span class="'+(ok?'verified-label':'pending-label')+'">'+(ok?'✓ VERIFIED':'! NOT YET VERIFIED')+'</span><h2>'+esc(d.name)+'</h2><p class="district-location">'+esc(d.county)+' · '+esc(d.state)+' · '+esc(d.districtType)+'</p></div><div class="district-website">'+link(d.website,"Official website")+'</div></div><div class="district-facts"><span><b>Main office</b>'+esc(d.mainPhone)+'</span><span><b>District status</b>'+esc(d.status)+'</span><span><b>CDS code</b>'+esc(d.cdsCode)+'</span></div><h3>Professional contacts ('+(d.contacts||[]).length+')</h3><div class="contact-list">'+(d.contacts||[]).map(c=>'<div class="directory-contact"><div><strong>'+esc(c.name)+'</strong><span>'+esc(c.title)+'</span><small class="'+(String(c.verificationStatus).startsWith("Verified")?'contact-verified':'contact-pending')+'">'+esc(c.verificationStatus)+'</small></div><div class="contact-details">'+(known(c.email)?'<a href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a>':'#')+'<span>'+esc(c.phone)+'</span><span>Source: '+link(c.source,"Official contact page")+'</span></div></div>').join("")+'</div><div class="district-foot"><span>District source: '+link(d.districtSource,"Government directory")+'</span><span>Checked: '+esc(d.lastVerified)+'</span></div><p class="record-note">'+esc(d.verificationStatus)+(d.locationCheck==="Review required"?' · State/county mismatch requires investigation.':'')+'</p></article>';}).join("");pager.innerHTML='<button type="button" id="prev-page" '+(page===1?'disabled':'')+'>← Previous</button><span>Page '+page+' of '+pages+'</span><button type="button" id="next-page" '+(page===pages?'disabled':'')+'>Next →</button>';document.getElementById("prev-page").onclick=()=>{page--;render();};document.getElementById("next-page").onclick=()=>{page++;render();};}
+async function loadDirectory(){try{const r=await fetch("data/districts.json",{cache:"no-store"});if(!r.ok)throw Error("load");districts=await r.json();const states=[...new Set(districts.map(d=>d.state).filter(s=>s&&s!=="#"))].sort();stateFilter.innerHTML='<option value="">All states</option>'+states.map(s=>'<option value="'+esc(s)+'">'+esc(s)+'</option>').join("");const v=districts.filter(d=>d.verificationStatus.startsWith("Verified")).length;status.textContent="Showing "+districts.length+" spreadsheet district leads. Only "+v+" are currently verified; all others are marked pending.";render();}catch(e){status.textContent="Directory data could not be loaded.";list.innerHTML='<div class="directory-empty">Directory temporarily unavailable.</div>';}}
+search.addEventListener("input",()=>{page=1;render();});stateFilter.addEventListener("change",()=>{page=1;render();});loadDirectory();
